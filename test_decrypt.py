@@ -13,5 +13,13 @@ class TestDecryptage(unittest.TestCase):
         decrypte = decrypt(crypte)
         self.assertEqual(decrypte, message)
 
+    def test_inverse_avec_pas(self):
+        from crypt import crypt
+        message = "a"
+        crypte = crypt(message, 2)
+        decrypte = decrypt(crypte)
+        self.assertEqual(decrypte, message)
+
+
 if __name__ == "__main__":
     unittest.main()
