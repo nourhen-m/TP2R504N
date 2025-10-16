@@ -11,7 +11,8 @@ class TestFizzBuzzPartieB(unittest.TestCase):
 
     def test_affiche_2(self):
         self.assertEqual(affiche(2), "12")
-
+    def test_fizz_pour_3(self):
+        self.assertEqual(affiche(3), "12Fizz")
 
 if __name__ == "__main__":
     unittest.main()
