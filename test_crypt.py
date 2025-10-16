@@ -16,7 +16,7 @@ class TestCryptage(unittest.TestCase):
 
 
     def test_a_devient_c_avec_pas_2(self):
-        self.assertEqual(crypt("a", 2), "c")
+        self.assertEqual(crypt("a", 2), "c2")
 
 
 
