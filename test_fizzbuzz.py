@@ -6,9 +6,11 @@ class TestFizzBuzzPartieB(unittest.TestCase):
         self.assertIsInstance(affiche(5, 10), str)
 
     def test_affiche_5_a_10(self):
-        attendu = "BuzzFizz78FizzBuzz"
-        self.assertEqual(affiche(5, 10), attendu)
+        self.assertEqual(affiche(5, 10), "BuzzFizz78FizzBuzz")
 
+    def test_affiche_10_a_16(self):
+        attendu = "Buzz11Fizz1314FrisBee16"
+        self.assertEqual(affiche(10, 16), attendu)
 
 
 if __name__ == "__main__":
