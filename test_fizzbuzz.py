@@ -11,7 +11,9 @@ class TestFizzBuzz(unittest.TestCase):
         with redirect_stdout(buff):
             affiche()
         out = buff.getvalue().strip()
-        self.assertNotEqual(out, "", "affiche() ne doit pas être vide")
+	self.assertTrue(out.startswith("12"), "Début attendu '12'")
+
+
 
 if __name__ == "__main__":
     unittest.main()
