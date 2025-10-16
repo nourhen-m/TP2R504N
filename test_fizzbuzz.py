@@ -16,8 +16,11 @@ class TestFizzBuzzPartieB(unittest.TestCase):
 
     def test_buzz_pour_5(self):
         self.assertEqual(affiche(5), "12Fizz4Buzz")
-    def test_frisbee_pour_15(self):
-        self.assertTrue(affiche(15).endswith("FrisBee"))
+
+
+    def test_sequence_complete_jusqua_15(self):
+        attendu = "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee"
+        self.assertEqual(affiche(15), attendu)
 
 
 
