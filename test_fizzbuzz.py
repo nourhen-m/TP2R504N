@@ -3,8 +3,11 @@ from fizzbuzz import affiche
 
 class TestFizzBuzzPartieB(unittest.TestCase):
     def test_affiche_accepte_un_parametre(self):
-        resultat = affiche(5, 10)
-        self.assertIsInstance(resultat, str, "affiche(n1, n2) doit retourner une chaîne")
+        self.assertIsInstance(affiche(5, 10), str)
+
+    def test_affiche_5_a_10(self):
+        attendu = "BuzzFizz78FizzBuzz"
+        self.assertEqual(affiche(5, 10), attendu)
 
 
 
