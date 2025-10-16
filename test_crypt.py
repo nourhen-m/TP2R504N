@@ -15,5 +15,9 @@ class TestCryptage(unittest.TestCase):
             self.fail("crypt() doit accepter 2 arguments (message, pas)")
 
 
+    def test_a_devient_c_avec_pas_2(self):
+        self.assertEqual(crypt("a", 2), "c")
+
+
 if __name__ == "__main__":
     unittest.main()
