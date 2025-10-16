@@ -1,2 +1,3 @@
 def affiche():
-    pass
+    print("1", end="")
+
