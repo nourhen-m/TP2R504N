@@ -2,9 +2,7 @@ import string
 
 CARACTERES = string.ascii_letters + string.punctuation + string.digits + " "
 
-def crypt(message: str) -> str:
-    if message == "":
-        return ""
+def crypt(message: str, pas: int = 1) -> str:
     resultat = ""
     for ch in message:
         if ch in CARACTERES:
