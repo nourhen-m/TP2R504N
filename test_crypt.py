@@ -19,5 +19,6 @@ class TestCryptage(unittest.TestCase):
         self.assertEqual(crypt("a", 2), "c")
 
 
+
 if __name__ == "__main__":
     unittest.main()
