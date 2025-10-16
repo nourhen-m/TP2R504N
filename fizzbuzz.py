@@ -4,6 +4,8 @@ def affiche(n):
 
         if i % 3 == 0:
             texte += "Fizz"
+        elif i % 5 == 0:
+            texte += "Buzz"
         else:
             texte += str(i)
 
