@@ -11,4 +11,7 @@ def crypt(message: str, pas: int = 1) -> str:
 
         else:
             resultat += ch
-    return resultat
+    if pas != 1:
+        return resultat + str(pas)
+    else:
+        return resultat
