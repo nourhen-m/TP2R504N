@@ -6,5 +6,10 @@ class TestFizzBuzzPartieB(unittest.TestCase):
         resultat = affiche(1)
         self.assertIsInstance(resultat, str, "affiche(n) doit retourner une chaîne")
 
+    def test_affiche_1(self):
+        self.assertEqual(affiche(1), "1")
+
+
+
 if __name__ == "__main__":
     unittest.main()
