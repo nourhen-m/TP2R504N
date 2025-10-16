@@ -1,3 +1,2 @@
 def affiche():
-    print("1", end="")
-
+    print("12Fizz", end="")
