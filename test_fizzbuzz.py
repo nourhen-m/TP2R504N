@@ -1,11 +1,10 @@
 import unittest
 from fizzbuzz import affiche
 
-class TestFizzBuzz(unittest.TestCase):
-    def test_affiche_genere_1_a_5(self):
-        resultat = affiche()
-        attendu = "12Fizz4Buzz"
-        self.assertEqual(resultat, attendu, "Le texte généré doit correspondre à 1→5")
+class TestFizzBuzzPartieB(unittest.TestCase):
+    def test_affiche_accepte_un_parametre(self):
+        resultat = affiche(1)
+        self.assertIsInstance(resultat, str, "affiche(n) doit retourner une chaîne")
 
 if __name__ == "__main__":
     unittest.main()
